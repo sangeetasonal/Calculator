@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2f3e57;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.title {
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.output-container {
+    background: rgba(24, 31, 50, 1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+#display {
+    background: rgba(24, 31, 50, 1);
+    width: 100%;
+    color: white;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    
+}
+
+.buttons-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    background: rgba(37, 45, 68, 1);
+    padding: 31px 28px 31px 28px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+
+}
+
+button {
+    background: rgba(234, 227, 219, 1);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    color:  rgba(59, 70, 100, 1);
+    font-size: 20px;
+    font-weight: 800;
+    height: 50px;
+    height: 50px;
+    width: 86px;
+
+}
+
+button:hover {
+    background-color: #b0bec5;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.reset {
+    grid-column: span 2;
+    background: rgba(100, 114, 153, 1);
+    color:  rgba(255, 255, 255, 1);
+    height: 50px;
+    width: 185px;
+}
+
+.equal {
+    grid-column: span 2;
+    background: rgba(209, 63, 48, 1);
+    color:  rgba(255, 255, 255, 1);
+    height: 50px;
+    width: 185px;
+}
+.delete{
+    background: rgba(100, 114, 153, 1);
+    color:  rgba(255, 255, 255, 1);
+}
